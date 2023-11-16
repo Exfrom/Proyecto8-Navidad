@@ -30,3 +30,27 @@ function cuentaRegresiva(tiempoFaltante,reloj,mensaje){
 };
 
 cuentaRegresiva('Dec 25 2023 00:00:00 GMT-0500','cuentaRegresiva','¡Feliz Navidad!');
+let noel="off";
+let noelStop = document.getElementById("noelquieto");
+let botonSonido = new Audio ('sound/play.mp3');
+let botonAudio = new Audio ('sound/allWant.mp3')
+function bailar(){
+    if (noel == "off"){
+        noel ="on"
+        noelStop.classList.add("on");
+        noelStop.addEventListener('click',()=>{
+            botonSonido.play();
+        })
+        noelStop.addEventListener('click',()=>{
+            botonAudio.play();
+        })
+        console.log("On");
+    }else{
+        noel="off"
+        noelStop.classList.remove("on");
+        noelStop.addEventListener('click',()=>{
+            botonAudio.pause();
+        })
+        console.log("off");
+    }
+}   
