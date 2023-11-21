@@ -10,25 +10,35 @@
 
 <body>
     <!-- Contenedor principal -->
-    <div class="contenedor1">
-
-        <!-- Contenedor para la cuenta regresiva (izquierda) -->
-        <div id="cuentaRegresiva"></div>
-
-        <!-- Contenedor para los botones (derecha) -->
-        <div class="botones">
-            <div class="figuraOff" id="figuraPlay">
-                <div class="botonOn" onclick="play()">Play</div>
+    <div class="contenedor">
+        <div class="subContenedor">
+    
+            <div id="mensaje"></div>
+    
+            <div class="reloj">
+                <div class="dia" id="dia"></div>
+                <div class="hora" id="hora"></div>
+                <div class="minuto" id="minuto"></div>
+                <div class="segundo" id="segundo"></div>
             </div>
-            <div class="figuraOn" id="figuraStop">
-                <div class="botonOff" onclick="pause()">Pause</div>
+           
+            <div class="letra">
+                <div class="n">D</div>
+                <div class="n">H</div>
+                <div class="n">M</div>
+                <div class="n">S</div>
+            </div>
+    
+            <div class="botones">
+                <button class="play" id="play" onclick="bailar()">Play</button>
+                <button class="pause" id="pause" onclick="detener()">Pause</button>
             </div>
         </div>
-
-        <!-- Contenedor para la animación baile -->
-        <div class="baile"></div>
-
     </div>
+    <div class="papaN">
+        <div id="noelQuieto" class="noelOff"></div>
+    </div>
+    <div id="cuentaRegresiva"></div>
     <script src="./script.js"></script>
 </body>
 
