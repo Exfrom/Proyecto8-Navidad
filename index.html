@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navidad</title>
     <link rel="stylesheet" href="./css/style.css">
+    <title>Cuenta regresiva</title>
 </head>
+
 <body>
-    <div id="cuentaRegresiva"></div>
-    <div class="noel">
-        <div id="noelquieto" class="noelOff">
-            <div class="noelOnOff" onclick="play()">play</div>
+    <!-- Contenedor principal -->
+    <div class="contenedor1">
+
+        <!-- Contenedor para la cuenta regresiva (izquierda) -->
+        <div id="cuentaRegresiva"></div>
+
+        <!-- Contenedor para los botones (derecha) -->
+        <div class="botones">
+            <div class="figuraOff" id="figuraPlay">
+                <div class="botonOn" onclick="play()">Play</div>
+            </div>
+            <div class="figuraOn" id="figuraStop">
+                <div class="botonOff" onclick="pause()">Pause</div>
+            </div>
         </div>
+
+        <!-- Contenedor para la animación baile -->
+        <div class="baile"></div>
+
     </div>
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
-</html> #3200220
+
+</html>

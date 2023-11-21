@@ -1,42 +1,93 @@
-*{
+/* Estilos globales */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body{
+body {
+    min-height: 100vh;
+    background-color: rgb(83, 200, 220);
+}
+
+/* Estilos del contenedor principal */
+.contenedor1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos de la cuenta regresiva (izquierda) */
+#cuentaRegresiva {
+    /* Agrega estilos específicos para la cuenta regresiva si es necesario */
+}
+
+/* Estilos de los botones y elementos relacionados (derecha) */
+.botones {
+    display: flex;
+    
+    align-items: center;
+}
+
+.figuraOff {
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    background-image: url("../img/papaNoel1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
     
 }
-.noelOff{
-    width: 550px;
-    height: 600px;
-    background-color: rgb(255, 106, 0);
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    background-image: url(../img/papaNoel1.png);
+
+.figuraOff.on {
+    background-image: url("../img/papaNoel.gif");
 }
 
-.noelOnOff{
+.botonOn,
+.botonOff {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+    font-family: cursive;
+    
+}
+
+.botonOn.on {
+    background-image: url("../img/papaNoel1.png");
+}
+
+.botonOn:hover,
+.botonOff:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.cuentaRegresiva {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los elementos de la cuenta regresiva */
+.dias,
+.horas,
+.minutos,
+.segundos {
+    font-size: 30px;
     width: 100px;
-    height: 50px;
-    background-color: rgb(238, 60, 6);
-    border-radius: 1vh;
-    border: 0.2rem solid rgb(229, 135, 107);
-    position: fixed;
-    color: rgb(247, 242, 240);
-    align-items: center;
+    height: 60px;
+    border: 0.2rem solid white;
+    border-radius: 50vh;
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.noelOff.on{
-    background-image: url(../img/papaNoel.gif);
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: cursive;
 }
