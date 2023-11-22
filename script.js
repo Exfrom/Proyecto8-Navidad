@@ -19,7 +19,7 @@ let noel = "off";
 let noelStop = document.getElementById("noelQuieto");
 let noelplay = document.getElementById("play");
 let noelpause = document.getElementById("pause");
-let sonidoFondo = new Audio ("./sounds/allWant.mp3");
+let sonidoFondo = new Audio ("./sound/allWant.mp3");
 function cuentaRegresiva(tiempoFaltante,reloj,mensaje) {
     const tiempoActual = setInterval(() => {  
         let t = obtenerTiempoFaltante(tiempoFaltante);
@@ -65,4 +65,4 @@ function cuentaRegresiva(tiempoFaltante,reloj,mensaje) {
     }, 1000);
 }
 
-cuentaRegresiva('November 21 2023 16:50 :00 GMT-0500', 'cuentaRegresiva', '¡Feliz Navidad!');
+cuentaRegresiva('November 21 2023 19:08 :00 GMT-0500', 'cuentaRegresiva', '¡Feliz Navidad!');
